@@ -88,7 +88,7 @@ public class Expression extends LinkedBinaryTree{
             return;
         }
         char[] tokens = infixExpression.toCharArray();
-        int[] index = {0}; // Infix ilerhiillin ehlelees ehleh
+        int[] index = {0}; // Start from infix expression beginning
 
         setRoot(buildExpressionTreeFromInfixHelper(tokens, index, 0));
     }
@@ -161,7 +161,7 @@ public class Expression extends LinkedBinaryTree{
                 throw new IllegalArgumentException("Invalid operator: " + root.element);
         }
     }
-
+// added comment
     public static void expressionMenu() {
 		Scanner sc = new Scanner(System.in);
 		Expression tree = new Expression();
