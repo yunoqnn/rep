@@ -224,6 +224,6 @@ public class Expression extends LinkedBinaryTree{
 		while(true);
 	}
     public static void main(String[] args) {
-    	 expressionMenu();
+    	 expressionMenu(); //2:48
 	}
 }
