@@ -62,7 +62,7 @@ public class Expression extends LinkedBinaryTree{
             return;
         }
         char[] tokens = postfixExpression.toCharArray();
-        int[] index = {tokens.length - 1}; // postfix ilerhiillin tugsguluus ehleh
+        int[] index = {tokens.length - 1}; // start from end of postfix expression
         setRoot(buildExpressionTreeFromPostfixHelper(tokens, index));
     }
 
