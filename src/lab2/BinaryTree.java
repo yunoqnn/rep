@@ -2,7 +2,7 @@ package lab2;
 
 public class BinaryTree<T extends Comparable<T>> {
 	
-	private Node<T> root;
+	private Node<T> root; // comment
 	
 	public static class Node<T extends Comparable<T>> {
         T value;
