@@ -205,3 +205,4 @@ public class BinaryTree<T extends Comparable<T>> {
 	        System.out.println("Size: "+tree.size());
 	}
 }
+//3:30
