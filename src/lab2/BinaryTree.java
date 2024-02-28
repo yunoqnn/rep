@@ -164,8 +164,8 @@ public class BinaryTree<T extends Comparable<T>> {
     }
 
 	public static void main(String[] args) {
-		 BinaryTree<Integer> bt = new BinaryTree<>();
-		 BinaryTree<String> tree = new BinaryTree<>();
+		 	BinaryTree<Integer> bt = new BinaryTree<>();
+		 
 	        bt.insert(50);
 	        bt.insert(30);
 	        bt.insert(20);
@@ -173,12 +173,17 @@ public class BinaryTree<T extends Comparable<T>> {
 	        bt.insert(70);
 	        bt.insert(60);
 	        bt.insert(80);
-
-	        System.out.println("InOrder traversal of the given tree:");
+	        
+	        BinaryTree<String> tree = new BinaryTree<>();
+	        tree.insert("Left");
+	        tree.insert("Root");
+	        tree.insert("Right");
+	        
+	        System.out.println("InOrder traversal of the Integer tree:");
 	        bt.inorderTraversal(); 
-	        System.out.println("PreOrder traversal of the given tree:");
+	        System.out.println("PreOrder traversal of the Integer tree:");
 	        bt.preorderTraversal();
-	        System.out.println("PostOrder traversal of the given tree:");
+	        System.out.println("PostOrder traversal of the Integer tree:");
 	        bt.postorderTraversal();
 	        
 	        System.out.println("Size: "+bt.size());
@@ -197,9 +202,7 @@ public class BinaryTree<T extends Comparable<T>> {
 	        System.out.println("Size: "+bt.size());
 	        
 	        
-	        tree.insert("Left");
-	        tree.insert("Root");
-	        tree.insert("Right");
+	        
 	        System.out.println("\nTree of Strings: ");
 	        tree.inorderTraversal();
 	        System.out.println("Size: "+tree.size());
