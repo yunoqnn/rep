@@ -165,7 +165,7 @@ public class BinaryTree<T extends Comparable<T>> {
 
 	public static void main(String[] args) {
 		 BinaryTree<Integer> bt = new BinaryTree<>();
-		 
+		 BinaryTree<String> tree = new BinaryTree<>();
 	        bt.insert(50);
 	        bt.insert(30);
 	        bt.insert(20);
@@ -196,7 +196,7 @@ public class BinaryTree<T extends Comparable<T>> {
 	        
 	        System.out.println("Size: "+bt.size());
 	        
-	        BinaryTree<String> tree = new BinaryTree<>();
+	        
 	        tree.insert("Left");
 	        tree.insert("Root");
 	        tree.insert("Right");
