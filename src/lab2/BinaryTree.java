@@ -1,5 +1,4 @@
 package lab2;
-
 public class BinaryTree<T extends Comparable<T>> {
 	
 	private Node<T> root; 
@@ -148,7 +147,7 @@ public class BinaryTree<T extends Comparable<T>> {
         }
         return 1 + size(node.left) + size(node.right);
     }
-    public int height() {
+    /*public int height() {
         return heightRec(root);
     }
 
@@ -161,9 +160,9 @@ public class BinaryTree<T extends Comparable<T>> {
 
             return Math.max(leftHeight, rightHeight) + 1;
         }
-    }
+    } */
 
-	public static void main(String[] args) {
+/*	public static void main(String[] args) {
 		 	BinaryTree<Integer> bt = new BinaryTree<>();
 		 
 	        bt.insert(50);
@@ -201,10 +200,10 @@ public class BinaryTree<T extends Comparable<T>> {
 	        
 	        System.out.println("Size: "+bt.size());
 	        
-	        
-	        
 	        System.out.println("\nTree of Strings: ");
 	        tree.inorderTraversal();
 	        System.out.println("Size: "+tree.size());
-	}
+	} */
+    
+    
 }
