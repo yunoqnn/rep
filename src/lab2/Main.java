@@ -37,9 +37,22 @@ static Scanner sc = new Scanner(System.in);
     }
     public static void subMenu1() {
     	BinaryTree<Integer> intTree = new BinaryTree<>();
-    	menu_items();
-    	intTree.insert(1);
+    	
+    	intTree.insert(1); 
+    	intTree.insert(2);
+    	intTree.insert(3);
+    	intTree.insert(4);
+    	intTree.insert(5);
+    	intTree.insert(6);
+    	intTree.insert(7);
+    	intTree.insert(8);
+    	intTree.insert(9);
+    	System.out.println("Given tree: ");
+    	intTree.inorderTraversal();
 		int choice = sc.nextInt();
+		do {
+			
+		menu_items();
 		switch(choice) {
 		case 1:
 			System.out.println("Enter the element to add to tree");
@@ -55,9 +68,25 @@ static Scanner sc = new Scanner(System.in);
 	        intTree.preorderTraversal();
 	        System.out.println("PostOrder traversal of the Integer tree:");
 	        intTree.postorderTraversal();
+	        break;
 		case 3:
 			System.out.printf("size: ",+intTree.size());
-		}
+			break;
+		case 4:
+			System.out.println("Enter element to check:");
+			int element2 = sc.nextInt();
+			System.out.println(intTree.contains(element2));
+			break;
+		case 5:
+			System.out.println("Enter element to delete");
+			int element3 = sc.nextInt();
+			intTree.delete(element3);
+			System.out.println("Tree: ");
+			intTree.inorderTraversal();
+			break;
+		} } while(true);
+		
+			
     }
     public static void main(String[] args) {
     	Menu();
